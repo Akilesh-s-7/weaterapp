@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tamil Nadu Weather Search</title> 
+</head>
+<body>
+    <nav>
+        <h1>
+            <span class="temp">TEMP</span>
+            <span class="teller">TELLER</span>
+        </h1>
+    </nav>
+    
+    <div class="container">
+        <div class="searchcity">
+            <h2 class="firsthalf">SEARCH CITY</h2>
+        </div>
+        <div class="inputcontainer">
+            <input id="searchTN" class="inputbox" list="tn-cities" placeholder="Type a city...">
+            <datalist id="tn-cities"></datalist>
+        </div>
+        
+        <button class="sumbutton" onclick="getweather()">Get Weather</button>
+        
+        
+        <div class="result-container">
+            <h2 id="result" class="result"></h2>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+
+
+
+</body>
+</html>
