@@ -30,7 +30,7 @@ function getweather() {
 
              resultDiv.innerHTML = 'Loading weather data...';
              
-    let API_KEY = '5af3055456cfedc77c165d86a33c7984';
+    let API_KEY = 'YOUR_API_KEY';
 
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${API_KEY}&units=metric`)
     .then(response => response.json()) 
